@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/pixabay-api.js" defer></script>
+    <script type="module" src="./js/render-functions.js" defer></script>
+
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search images..." required />
+      <button type="submit" id="searchButton">Search</button>
+    </form>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+    <div id="loader" class="hidden">Loading images, Please wait...</div>
 
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
+    <div class="gallery">
+      </div>
   </body>
 </html>
