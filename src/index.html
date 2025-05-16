@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script type="module" src="./js/pixabay-api.js" defer></script>
-    <script type="module" src="./js/render-functions.js" defer></script>
 
-  </head>
-  <body>
-    <form id="searchForm">
-      <input type="text" id="searchInput" placeholder="Search images..." required />
-      <button type="submit" id="searchButton">Search</button>
-    </form>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script type="module" src="./js/pixabay-api.js" defer></script>
+  <script type="module" src="./js/render-functions.js" defer></script>
+  <script type="module" src="./main.js" defer></script>
+</head>
 
-    <div id="loader" class="hidden">Loading images, Please wait...</div>
+<body>
+  <form id="searchForm" class="form">
+    <input type="text" id="searchInput" placeholder="Search images..." required />
+    <button type="submit" id="searchButton">Search</button>
+  </form>
 
-    <div class="gallery">
-      </div>
-  </body>
+  <span class="loader hidden">Loading images, please wait...</span>
+
+  <ul class="gallery"></ul>
+</body>
+
 </html>

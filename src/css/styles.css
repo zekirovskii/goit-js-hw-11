@@ -1,10 +1,12 @@
-#loader{
+.loader {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#loader.hidden {
-    display: none; }
+
+.loader.hidden {
+    display: none;
+}
 
 body,
 html {
@@ -28,13 +30,13 @@ html {
 
 #searchInput {
     width: 272px;
-        height: 40px;
-        padding: 0 12px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        outline-color: #4A90E2;
-        transition: border-color 0.3s ease;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline-color: #4A90E2;
+    transition: border-color 0.3s ease;
 }
 
 #searchInput:focus {
@@ -50,7 +52,7 @@ html {
     font-size: 16px;
     border: none;
     border-radius: 10px;
-    background:#4e75ff;
+    background: #4e75ff;
     color: white;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
